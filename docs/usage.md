@@ -88,3 +88,32 @@ git clone https://github.com/Edward-J-create/website-design-build.git
 Figma、外部图像生成和特定部署平台均为按任务选择的能力，不是使用此 Skill 的前置要求。内部模板由 Agent 整理，用户不必填写。
 
 Instruction language: Chinese. Output language: the user's requested language. Invocation permission does not grant access to external services or third-party assets.
+
+## Meta Muse AI 与 Grok Bot
+
+核对日期：2026-10-17。下面是接入方式与官方能力核对，**不是这两个产品的实际生产通过记录**。
+
+| 产品 | 已核对的依据 | 使用方式与边界 |
+| --- | --- | --- |
+| [Meta Muse AI](https://ai.meta.com/muse/)（个人 Agent） | 官方介绍其独立 Linux 电脑、浏览器、工具构建与多步骤任务能力 | 可把完整 Skill 作为任务资料供 Agent 读取执行；多文件 Skill 的原生导入和自动触发尚未在该产品实测，不能承诺粘贴仓库链接就自动安装 |
+| [Grok Bot](https://x.ai/bot) | [官方 Skill 文档](https://docs.x.ai/grok-bot/skills-routines-and-automations)说明自定义流程、共享于个人 Bots 的 Private skills 库与 `/` 引用 | 先获取完整目录并执行一次，再按产品支持的方式保存为私人 Skill；完整引用资源的导入仍需实际确认，不只保存主文件的摘要 |
+| Muse Code（与个人 Muse AI 区分） | [官方开发文档](https://meta-models.github.io/muse-code-sdk/next/guides/extend/skills/)提供 `SKILL.md`、目录发现与验证命令 | 按其文档安装完整包；此仓库未运行 Muse Code 模型，不把文档兼容写成生产通过 |
+| Grok Build（与 Grok Bot 区分） | [官方文档](https://docs.x.ai/build/features/skills-plugins-marketplaces)说明 `.grok/skills/` 和命名调用 | 按其文档安装目录；此仓库未运行 Grok Build 模型 |
+
+可以给个人 Agent 以下提示，再附上自己的品牌介绍、文案与素材：
+
+```text
+请获取 https://github.com/Edward-J-create/website-design-build 中
+website-design-build/ 的完整目录。
+读取 SKILL.md，按需读取相对引用的 references/ 和 assets/templates/，
+不要只概括主文件；agents/openai.yaml 是可忽略的 UI 元数据。
+
+在我的环境里调用这套工作流，用下面的品牌介绍和产品素材制作网页。
+自行整理页面结构和视觉方向，交付源码与我能打开的预览，实际检查手机布局和关键操作。
+缺少的认证、支付和收件能力要如实列出，不用模拟成功替代。
+若你无法读取引用、运行代码或检查浏览器，请明确缺少哪项能力，完成可做的部分。
+
+遵守仅调用许可；不要把 Skill 本体发布或分享到公共技能库。
+```
+
+实际效果取决于账号内开放的工具、文件权限和运行环境。让 Bot 获取源文件、运行任务与保存私人 Skill 是不同阶段；有自定义 Skill 功能，不等于已经验证完整多文件包导入。

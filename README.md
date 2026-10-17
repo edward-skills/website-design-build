@@ -89,6 +89,8 @@ Skill 主体采用标准 `SKILL.md`、相对路径参考和模板，不绑定特
 
 [验证记录](docs/validation.md) 区分格式检查、安装检查、独立生产和浏览器检查；不将某个安装器识别成功写成所有模型均已通过生产验证。
 
+[Meta Muse AI 与 Grok Bot 的使用方式和验证边界 →](docs/usage.md#meta-muse-ai-与-grok-bot)
+
 ## 许可
 
 **公开可见，仅调用使用。** 可下载、安装并调用 Skill，为自己或客户生成网页，生成结果可正常使用、修改和商业发布。不授权转售、再分发或发布修改版 Skill，也不授权将 Skill 本身提供为面向第三方的托管服务。[完整条款](LICENSE) · [素材说明](NOTICE.md)
