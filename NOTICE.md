@@ -1,9 +1,11 @@
-# 使用与素材说明
+# Usage and asset notice
 
-本仓库采用 [Invocation-Only License 1.0](LICENSE)，为自定义的仅调用使用许可，不是 MIT 或 Apache 开源许可。允许为自己或客户安装、调用并使用生成网页；不授权再分发、转售或发布修改版 Skill。完整许可也随可安装目录中的 LICENSE.txt 分发。
+**English** · [简体中文](NOTICE.zh-CN.md)
 
-归流 Gather 和晚间 EVENFORM 均为验证流程准备的虚构品牌。Gather 的产品界面、Logo、反馈和套餐数据是测试材料；EVENFORM 产品照片使用 AI 为测试生成。它们不是现实公司的客户案例、真实产品规格或经营数据。
+This repository uses the custom [Invocation-Only License 1.0](LICENSE), not an MIT or Apache open-source license. Installation and invocation for your own or client projects, and use of generated websites, are permitted. Skill redistribution, resale and publication of modified Skill packages are not authorized. The complete terms are also bundled as LICENSE.txt in the installable directory.
 
-截图是浏览器运行页面后捕获的实际结果。示例源码不含生产账号、支付能力、认证凭据、私有聊天、托管配置或用户个人路径。Gather 的邮箱区域是 UI 预览，示例工作区是浏览器内存演示；EVENFORM 的搭配保存只作用于当前浏览器。它们均不代表真实询盘、认证或支付接通。
+Gather and EVENFORM are fictional brands created for workflow validation. Gather's interface, logo, feedback and plan data are test materials. EVENFORM product photos were AI-generated for testing. These are not real customer endorsements, product specifications or operating data.
 
-第三方名称用于说明兼容格式与可选工具。平台商标和第三方素材仍受相应权利及服务条款限制。安装不增加外部账户权限。
+Screenshots were captured from actual running pages. Example source contains no production accounts, payment integrations, authentication credentials, private conversations, hosting configuration or personal filesystem paths. Gather's email form is a UI preview and its sample workspace is an in-memory browser demonstration. EVENFORM selection storage is local to the browser. Neither example establishes connected inquiry delivery, authentication or payments.
+
+Third-party names identify compatible formats and optional tools. Trademarks and third-party materials retain their respective rights and service terms. Installation does not expand external account permissions.
