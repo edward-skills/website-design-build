@@ -7,13 +7,13 @@
 ## 安装器
 
 ```bash
-npx skills add Edward-J-create/website-design-build --skill website-design-build
+npx skills add edward-skills/website-design-build --skill website-design-build
 ```
 
 选择需要的宿主。明确指定项目级安装到几个 Agent：
 
 ```bash
-npx skills add Edward-J-create/website-design-build \
+npx skills add edward-skills/website-design-build \
   --skill website-design-build \
   --agent codex claude-code cursor opencode
 ```
@@ -23,7 +23,7 @@ npx skills add Edward-J-create/website-design-build \
 ## 手动安装
 
 ```bash
-git clone https://github.com/Edward-J-create/website-design-build.git
+git clone https://github.com/edward-skills/website-design-build.git
 ```
 
 将仓库内的 `website-design-build/` 目录复制到宿主的 skill 目录。首次安装示例：
@@ -105,7 +105,7 @@ Instruction language: Chinese. Output language: the user's requested language. I
 可以给个人 Agent 以下提示，再附上自己的品牌介绍、文案与素材：
 
 ```text
-请获取 https://github.com/Edward-J-create/website-design-build 中
+请获取 https://github.com/edward-skills/website-design-build 中
 website-design-build/ 的完整目录。
 读取 SKILL.md，按需读取相对引用的 references/ 和 assets/templates/，
 不要只概括主文件；agents/openai.yaml 是可忽略的 UI 元数据。

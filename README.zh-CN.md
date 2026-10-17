@@ -29,7 +29,7 @@
 ### 1. 安装完整 Skill
 
 ```bash
-npx skills add Edward-J-create/website-design-build --skill website-design-build
+npx skills add edward-skills/website-design-build --skill website-design-build
 ```
 
 根据安装器提示选择你的 Agent。需要安装到全局时增加 `--global`；已有同名版本时先比较、备份。也可以按 [手动安装方法](docs/usage.zh-CN.md) 复制完整目录。

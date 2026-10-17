@@ -1,5 +1,7 @@
 # Website Design Build
 
+[All Skills / 全部 Skills](https://github.com/edward-skills)
+
 **Give an Agent your brand introduction, website content and product materials. Get a designed website with a runnable preview.**
 
 For brand websites, B2B inquiry sites and SaaS marketing sites, including pricing, sign-in and lightweight administration when requested. You do not need to write a sitemap, select a component library or complete a design questionnaire first.
@@ -29,7 +31,7 @@ Click a screenshot to enlarge it. The [example source](examples/README.md) runs 
 ### 1. Install the complete Skill
 
 ```bash
-npx skills add Edward-J-create/website-design-build --skill website-design-build
+npx skills add edward-skills/website-design-build --skill website-design-build
 ```
 
 Select your Agent in the installer. Add `--global` for a global installation. Compare and back up an existing installation before replacing it. [Manual installation](docs/usage.md#manual-installation) is also supported; copy the complete directory.

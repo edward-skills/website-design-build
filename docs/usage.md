@@ -7,13 +7,13 @@ Install the complete [website-design-build/](../website-design-build/) directory
 ## Installer
 
 ```bash
-npx skills add Edward-J-create/website-design-build --skill website-design-build
+npx skills add edward-skills/website-design-build --skill website-design-build
 ```
 
 Choose your host when prompted. To explicitly select project-level targets:
 
 ```bash
-npx skills add Edward-J-create/website-design-build \
+npx skills add edward-skills/website-design-build \
   --skill website-design-build \
   --agent codex claude-code cursor opencode
 ```
@@ -23,7 +23,7 @@ Add `--global` for global installation. The optional CLI is [vercel-labs/skills]
 ## Manual installation
 
 ```bash
-git clone https://github.com/Edward-J-create/website-design-build.git
+git clone https://github.com/edward-skills/website-design-build.git
 ```
 
 Copy the repository's inner `website-design-build/` directory into your host's Skill directory:
@@ -107,7 +107,7 @@ Give a personal Agent this request, followed by your introduction, copy and asse
 
 ```text
 Retrieve the complete website-design-build/ directory from
-https://github.com/Edward-J-create/website-design-build.
+https://github.com/edward-skills/website-design-build.
 Read SKILL.md and load relative references/ and assets/templates/ as needed.
 Do not replace the workflow with a summary. agents/openai.yaml is optional UI
 metadata.
