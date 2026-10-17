@@ -1,0 +1,4 @@
+interface:
+  display_name: "网站设计与搭建"
+  short_description: "从资料和视觉设计到响应式实现、转化流程及上线验收的网站工作流"
+  default_prompt: "使用 $website-design-build，根据我提供的网站内容、品牌信息和素材，设计并搭建可预览网页；请自行整理信息，只有影响结果的关键缺口才提问。"

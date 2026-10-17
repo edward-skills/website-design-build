@@ -1,0 +1,45 @@
+Website Design Build — Invocation-Only License 1.0
+Copyright (c) 2026 Edward-J-create. All rights reserved.
+
+1. Scope
+"Materials" means this Skill's instructions, references, templates and accompanying
+documentation and examples, except items expressly covered by another license.
+"Invoke" means providing the Skill to an AI agent as instructions for carrying out
+a user's website design or implementation task.
+
+2. Permitted use
+You may view the Materials and download, install and make the copies reasonably
+necessary to Invoke the Skill for your own or your clients' website projects,
+including commercial projects. You may provide your own project content, brand
+assets and configuration when Invoking the Skill.
+
+You may use, modify, publish and sell the resulting websites and other task
+outputs. This permission does not include republishing the Skill text, templates
+or other Materials as a skill, template collection, library or competing product.
+Third-party content and assets remain subject to their own rights and terms.
+
+3. Reserved uses
+Except for the invocation copies permitted above and rights required by applicable
+platform terms, no permission is granted to redistribute, sublicense, sell,
+repackage or publish the Materials or modified versions of them, or to offer the
+Skill itself as a hosted service to third parties. Changes to project inputs and
+generated outputs are permitted; publishing modified Skill instructions or
+derivative Skill packages requires separate written permission from the owner.
+Keep this notice in permitted copies. No trademark rights are granted.
+
+4. Public repository
+Public visibility is not an open-source license. GitHub users may have rights to
+view and fork a public repository under GitHub's applicable terms; this license
+does not purport to remove those rights or to technically prevent copying.
+
+5. Disclaimer
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. TO THE EXTENT
+PERMITTED BY APPLICABLE LAW, THE OWNER IS NOT LIABLE FOR CLAIMS OR DAMAGES ARISING
+FROM USE OF THE MATERIALS. Other rights are reserved unless separately granted.
+
+中文说明（便于理解；英文条款为完整授权文本）
+允许为自己或客户的网页项目下载、安装并调用本 Skill，也允许正常修改、发布和
+商业使用生成的网页。不得将 Skill 本体或修改版再分发、转售、包装成其他 Skill、
+模板库或面向第三方提供 Skill 托管服务。项目输入和生成结果可修改；Skill 本体
+的修改版发布需另获书面许可。公开不代表 MIT、Apache 等开源授权，也无法阻止
+GitHub 平台条款允许的查看和 fork。第三方素材仍受原有权利限制。

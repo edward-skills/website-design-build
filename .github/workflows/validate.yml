@@ -1,0 +1,21 @@
+name: Validate skill package
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '22'
+      - run: python3 scripts/validate_repository.py
+      - run: node --check examples/gather/dist/app.js
+      - run: node --check examples/gather/dist/assets/catalog.js
+      - run: node --check examples/evenform/dist/app.js

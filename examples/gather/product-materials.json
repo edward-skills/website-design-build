@@ -1,0 +1,66 @@
+{
+  "brand": {
+    "zh": "归流",
+    "en": "Gather"
+  },
+  "currency": "CNY",
+  "plans": [
+    {
+      "id": "free",
+      "name": "Free",
+      "monthlyPerWorkspace": 0,
+      "members": 3,
+      "feedbackLimit": 100,
+      "features": [
+        "手动录入与标签",
+        "投票排序",
+        "基础路线图"
+      ]
+    },
+    {
+      "id": "team",
+      "name": "Team",
+      "monthlyPerSeat": 59,
+      "annualMonthlyPerSeat": 49,
+      "minimumSeats": 3,
+      "features": [
+        "不限反馈数量",
+        "合并重复反馈",
+        "自定义标签与来源",
+        "团队路线图"
+      ]
+    }
+  ],
+  "sample": {
+    "workspace": "Northstar 产品组",
+    "feedback": [
+      {
+        "title": "支持批量修改反馈标签",
+        "source": "用户访谈",
+        "tag": "整理效率",
+        "votes": 18,
+        "status": "计划中"
+      },
+      {
+        "title": "路线图增加筛选条件",
+        "source": "邮件反馈",
+        "tag": "路线图",
+        "votes": 12,
+        "status": "进行中"
+      },
+      {
+        "title": "导出反馈列表",
+        "source": "日常沟通",
+        "tag": "数据管理",
+        "votes": 9,
+        "status": "已完成"
+      }
+    ],
+    "detail": "反馈越来越多时，希望一次整理多条内容，减少重复操作。"
+  },
+  "pricingNotes": [
+    "月付按月收取；年付一次支付 12 个月。",
+    "Team 最少 3 个席位；Free 最多 3 位成员。",
+    "年付单价为每席位每月折算价。"
+  ]
+}
