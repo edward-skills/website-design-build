@@ -92,6 +92,8 @@ The package uses `SKILL.md`, relative references and templates. It does not requ
 
 [Validation records](docs/validation.md) distinguish packaging, installation, independent production and browser inspection. Installer recognition is not proof that every model has passed production testing. See [Meta Muse AI and Grok Bot](docs/usage.md#meta-muse-ai-and-grok-bot) for documented capabilities and current verification limits.
 
+Maintainers can use the [frozen SaaS/B2B evaluation cases and browser replay](evals/README.md). They live outside the installed Skill and do not add steps for ordinary users. [Changes and versions](CHANGELOG.md).
+
 ## Rights
 
 **Publicly visible, invocation-only.** You may install and invoke the Skill for your own or client projects, and use, modify, publish and sell resulting websites. Redistribution, resale, repackaging, publishing modified Skill packages and hosting the Skill itself for third parties are not authorized. [Full license](LICENSE) · [Asset notice](NOTICE.md)

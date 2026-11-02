@@ -1,0 +1,168 @@
+{
+  "recordedAt": "2026-11-02T12:32:41.618Z",
+  "node": "v26.3.0",
+  "browser": "156.0.8078.79",
+  "checkerSha256": "aa9eb05c6572a9dacd9c0c16c305a07f09b800f7915c1ef0849406a99783bade",
+  "scope": "Existing example browser regression only; not new model generation, native activation, security attack execution or Skill uplift.",
+  "sourceHashes": {
+    "examples/gather/dist/app.js": "0249871bfa360d8679ccc37ba5ab966fdaea5b6be9f17eadde44d4992fc52163",
+    "examples/gather/dist/assets/catalog.js": "a44074fa0a8659f9b6533ffc78fe16f91282f27a0276edf6f499ac477ff54978",
+    "examples/gather/dist/assets/mark.svg": "b3d1542e330583529a4e68b559e91f7b65870cc5f3d232ae7402f05592249dc2",
+    "examples/gather/dist/assets/product-feedback-mobile.svg": "5a36fb9fb8652e90697cf9bb0dfa946554cef9b6d98d26cc329d98809def47e3",
+    "examples/gather/dist/assets/product-feedback.svg": "e6afdaf06cc9406e2b871beacbd57c69ca99e5aa3325f796c6367950a45f345a",
+    "examples/gather/dist/index.html": "b9d4a7a9b63f77f9a23a3c51fb3b0386cf3b85a7a5c35d8e118ab80aa4cc3f4a",
+    "examples/gather/dist/login/index.html": "11756e879f3cf46c6f185cecb8d5cf6ca5febc3030542288bcf9f21c704d01c2",
+    "examples/gather/dist/pricing/index.html": "8f98af297ef855485916f34c90ae1550d1c45cfb14652a03ef56a46460d6e285",
+    "examples/gather/dist/styles.css": "9028630bc4788869d45a7e1f8da9da072c3853bfea43ce0ef14db746a0a0e7e9",
+    "examples/evenform/dist/app.js": "cba47048cd6427733a39cb9f09b5a510e88b87db95a9f178afc70389af63d185",
+    "examples/evenform/dist/assets/favicon.svg": "66403c61b690d063d6eb0bbd9835c1f36ecc49eff6aa7359b9222ca0297ae57c",
+    "examples/evenform/dist/assets/lifestyle-arc.jpg": "b718f8f84574c8d73b4e2e682477cbc342d4c82cd9393ccf46b32ef2067be5f6",
+    "examples/evenform/dist/assets/product-arc.jpg": "cf26eef33e527cd4823f7e28ccb128236448c3e2156271825489d6033029f91e",
+    "examples/evenform/dist/assets/product-pebble.jpg": "996716bf3f611108412d8a416ee763be519668e578f6cf489348d6283156a132",
+    "examples/evenform/dist/assets/product-stem.jpg": "0a286d44cf11f976dae7f1c062407541214241e0308de28051a1162c37fa8df2",
+    "examples/evenform/dist/index.html": "ccdb3d208b1cf2a8e27bb3a2fdfdfcfe1024872d4cd960a180ab4ea535ad291a",
+    "examples/evenform/dist/styles.css": "3b5fe62d8bdeef2ef66cff260754a298d716dd5b1302740dc0603c6bc9b4bd8c"
+  },
+  "checks": [
+    {
+      "id": "saas-pricing-and-cross-page-context",
+      "status": "pass",
+      "evidence": {
+        "annual5": 2940,
+        "monthly5": 295,
+        "returnAndRefresh": true
+      }
+    },
+    {
+      "id": "saas-invalid-seat-recovery",
+      "status": "pass",
+      "evidence": {
+        "invalid2ClearsQuote": true,
+        "valid4Monthly": 236
+      }
+    },
+    {
+      "id": "sign-in-preview-and-keyboard-return",
+      "status": "pass",
+      "evidence": {
+        "noAuthenticationWrite": true,
+        "escapeReturnsFocus": true
+      }
+    },
+    {
+      "id": "product-draft-save-refresh-and-download",
+      "status": "pass",
+      "evidence": {
+        "restored": true,
+        "downloadedUtf8": true,
+        "localDraftNotOrder": true
+      }
+    },
+    {
+      "id": "gather-home-basic-semantics-and-mobile",
+      "status": "pass",
+      "evidence": {
+        "missingAlt": 0,
+        "unnamedFields": [],
+        "main": 1,
+        "heading": true,
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "gather-pricing-basic-semantics-and-mobile",
+      "status": "pass",
+      "evidence": {
+        "missingAlt": 0,
+        "unnamedFields": [],
+        "main": 1,
+        "heading": true,
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "gather-login-basic-semantics-and-mobile",
+      "status": "pass",
+      "evidence": {
+        "missingAlt": 0,
+        "unnamedFields": [],
+        "main": 1,
+        "heading": true,
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "evenform-home-basic-semantics-and-mobile",
+      "status": "pass",
+      "evidence": {
+        "missingAlt": 0,
+        "unnamedFields": [],
+        "main": 1,
+        "heading": true,
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "semantic-check-negative-control",
+      "status": "pass",
+      "evidence": "A deliberate DOM-only missing-alt mutation was detected and discarded."
+    },
+    {
+      "id": "no-outside-requests-writes-or-runtime-errors",
+      "status": "pass",
+      "evidence": {
+        "outsideRequests": [],
+        "writes": [],
+        "pageErrors": []
+      }
+    }
+  ],
+  "untested": [
+    "new agent production and old/new comparison",
+    "native activation",
+    "injected-source agent execution",
+    "screen readers",
+    "full WCAG conformance",
+    "automatic contrast measurement"
+  ],
+  "maintenance_version": "1.0.1",
+  "fixture_suite_sha256": "b904d3ea067a938a423f63d0f13ecd126950d271a1951e449724b3f142d973e4",
+  "new_model_cases": {
+    "declared": 3,
+    "executed": 0,
+    "status": "not-run"
+  },
+  "attempts": [
+    {
+      "attempt": "r1",
+      "classification": "environment-block",
+      "pass": 0,
+      "fail": 0,
+      "blocked": 1,
+      "reason": "Bundled Chromium absent; subsequently selected existing Chrome, without installation."
+    },
+    {
+      "attempt": "r2",
+      "classification": "test-harness-error",
+      "pass": 8,
+      "fail": 2,
+      "blocked": 0,
+      "reason": "Strict locators matched both Team selection links; made continuation click specific and asserted both links. No website changes or business-oracle relaxation."
+    },
+    {
+      "attempt": "r3",
+      "classification": "example-artifact-regression",
+      "pass": 10,
+      "fail": 0,
+      "blocked": 0
+    },
+    {
+      "attempt": "r4",
+      "classification": "final-checker-and-complete-artifact-hashes",
+      "pass": 10,
+      "fail": 0,
+      "blocked": 0,
+      "reason": "Final replay after adding checker/full example-resource fingerprints; assertions unchanged."
+    }
+  ]
+}
