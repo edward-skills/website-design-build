@@ -19,3 +19,4 @@ jobs:
       - run: node --check examples/gather/dist/app.js
       - run: node --check examples/gather/dist/assets/catalog.js
       - run: node --check examples/evenform/dist/app.js
+      - run: node --check scripts/smoke_examples.mjs

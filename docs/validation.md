@@ -48,6 +48,18 @@ The original Gather example was also checked at 320, 390, 720, 768 and 1440px, w
 
 The Skill supplies concrete methods and acceptance criteria. Final quality depends on materials, host tools and actual inspection. Verify real business flows using the relevant modules when connecting production services.
 
+## 1.0.1 maintenance check — 2026-11-02
+
+The installed 16-file package matched the offline audit snapshot and repository package before editing. The revision adds source-instruction boundaries, basic accessibility acceptance and a version field. It does not replace the original website workflow or modify example website code.
+
+- Skill frontmatter, packaging, relative links, fixture hashes and the evaluator suite were checked.
+- Existing examples: ten browser regression groups passed in Chrome156 at desktop and390px, including pricing/navigation, invalid-seat recovery, preview-only sign-in, Escape focus return, browser-local draft restoration and an actual UTF-8 download. A missing-alt DOM negative control was detected. This is a bounded artifact regression, not a new independent site-generation run.
+- Existing independent outputs: the ten SaaS and six B2B logic tests were rerun locally and passed; those historical output projects are not distributed as executor inputs.
+- Initial browser attempt was blocked because bundled Chromium was absent. The next attempt exposed two ambiguous selectors in the new test harness; selectors were corrected without changing the site or business assertions, and the final run passed. Original attempts are retained in the maintenance workspace and summarized in the [machine-readable record](../evals/results/2026-11-02.json).
+- Three brand-only task cases and raw fixture hashes are frozen in [evals](../evals/README.md). **New generation, old/new Skill comparisons, injection-task execution and native activation remain unexecuted.** No quality uplift or reliability percentage is claimed. Screen-reader review, automatic contrast measurement and full WCAG conformance remain unverified.
+
+Maintainer browser replay and optional evaluator commands are in [evals/README.md](../evals/README.md). Tests and grading material remain outside the installed Skill.
+
 ## Run repository checks
 
 ```bash

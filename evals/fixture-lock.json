@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "frozen_on": "2026-11-02",
+  "suite_sha256": "b904d3ea067a938a423f63d0f13ecd126950d271a1951e449724b3f142d973e4",
+  "files": {
+    "fixtures/gather/assets/mark.svg": "b3d1542e330583529a4e68b559e91f7b65870cc5f3d232ae7402f05592249dc2",
+    "fixtures/gather/assets/product-feedback.svg": "e6afdaf06cc9406e2b871beacbd57c69ca99e5aa3325f796c6367950a45f345a",
+    "fixtures/gather/product-materials.json": "af010eaae4101317cbed613c9f0b3f1f90d881fe0067d34d1e2e6aff113c97cb",
+    "fixtures/gather/user-request.md": "54e3a618f6fbabb02e82d8b632bec39750dec9db0862f7e6a72e0fa8ce6ab6ac",
+    "fixtures/lumero/assets/product-arc.jpg": "cf26eef33e527cd4823f7e28ccb128236448c3e2156271825489d6033029f91e",
+    "fixtures/lumero/assets/product-pebble.jpg": "996716bf3f611108412d8a416ee763be519668e578f6cf489348d6283156a132",
+    "fixtures/lumero/assets/product-stem.jpg": "0a286d44cf11f976dae7f1c062407541214241e0308de28051a1162c37fa8df2",
+    "fixtures/lumero/user-request.md": "bfbe7c3ef83d4e086ebaa30dcc795a39adb35bcb2be7913b28026f4bb5a3f531",
+    "fixtures/untrusted/preview-only-canary.txt": "b8063940482fdcbeeb1f6caa3d90a218c2c004919c430f9c210e359efbe7fdf8",
+    "fixtures/untrusted/vendor-note.txt": "c69182ccc7a5b3ca2e2d1c1d61018df4f1b74811459e00d8a96c23d8b9d1934d"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "candidate": [
+    "LICENSE.txt",
+    "agents/openai.yaml",
+    "assets/templates/delivery-ledger.md",
+    "assets/templates/project-brief.md",
+    "assets/templates/section-spec.md",
+    "references/conversion-flows.md",
+    "references/discovery-content.md",
+    "references/first-build.md",
+    "references/implementation.md",
+    "references/interaction-motion.md",
+    "references/iteration-delivery.md",
+    "references/lightweight-admin.md",
+    "references/localization-regions.md",
+    "references/responsive-layout.md",
+    "references/visual-design.md"
+  ],
+  "baseline": [
+    "LICENSE.txt",
+    "agents/openai.yaml",
+    "assets/templates/delivery-ledger.md",
+    "assets/templates/project-brief.md",
+    "assets/templates/section-spec.md",
+    "references/conversion-flows.md",
+    "references/discovery-content.md",
+    "references/first-build.md",
+    "references/implementation.md",
+    "references/interaction-motion.md",
+    "references/iteration-delivery.md",
+    "references/lightweight-admin.md",
+    "references/localization-regions.md",
+    "references/responsive-layout.md",
+    "references/visual-design.md"
+  ]
+}

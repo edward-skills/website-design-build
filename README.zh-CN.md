@@ -89,6 +89,8 @@ Skill 主体采用标准 `SKILL.md`、相对路径参考和模板，不绑定特
 
 [验证记录](docs/validation.zh-CN.md) 区分格式检查、安装检查、独立生产和浏览器检查；不将某个安装器识别成功写成所有模型均已通过生产验证。
 
+维护者可使用 [冻结的 SaaS/B2B 评测场景与浏览器重跑命令](evals/README.zh-CN.md)，评测材料放在安装包外，不增加普通用户的操作步骤。[版本与变更](CHANGELOG.md)。
+
 [Meta Muse AI 与 Grok Bot 的使用方式和验证边界 →](docs/usage.zh-CN.md#meta-muse-ai-与-grok-bot)
 
 ## 许可

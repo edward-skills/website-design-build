@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 """Dependency-free packaging checks; does not certify generated website quality."""
 from pathlib import Path
+import hashlib
+import json
 import re
 import sys
 
@@ -54,6 +56,32 @@ required = ['README.md','README.en.md','NOTICE.md','docs/usage.md','docs/validat
 for item in required:
     if not (ROOT/item).is_file():
         errors.append(f'Missing required repository artifact: {item}')
+
+# Keep evaluator-only material outside the installed runtime and freeze raw inputs.
+try:
+    evaluation = ROOT/'evals'
+    lock = json.loads((evaluation/'fixture-lock.json').read_text(encoding='utf8'))
+    suite_path = evaluation/'suite.json'
+    suite = json.loads(suite_path.read_text(encoding='utf8'))
+    actual_fixtures = {str(p.relative_to(evaluation)): hashlib.sha256(p.read_bytes()).hexdigest()
+                       for p in sorted((evaluation/'fixtures').rglob('*')) if p.is_file()}
+    if actual_fixtures != lock['files']:
+        errors.append('Evaluation fixtures differ from their reviewed frozen hashes')
+    if hashlib.sha256(suite_path.read_bytes()).hexdigest() != lock['suite_sha256']:
+        errors.append('Evaluation suite differs from its reviewed frozen hash')
+    for case in suite['cases']:
+        for item in case['inputs']:
+            if item['source'] not in actual_fixtures:
+                errors.append(f"Undeclared evaluation input: {item['source']}")
+    if (SKILL/'evals').exists() or (SKILL/'tests').exists():
+        errors.append('Evaluator-only files must remain outside the installed Skill')
+    runtime = json.loads((evaluation/'runtime-manifest.json').read_text(encoding='utf8'))
+    expected = sorted(str(p.relative_to(SKILL)) for p in SKILL.rglob('*')
+                      if p.is_file() and p.name != 'SKILL.md')
+    if runtime['candidate'] != expected or runtime['baseline'] != expected:
+        errors.append('Reviewed runtime manifest must match the complete Skill layout')
+except (OSError, ValueError, KeyError, TypeError) as exc:
+    errors.append(f'Invalid evaluation packaging: {exc}')
 if errors:
     print('\n'.join(errors), file=sys.stderr)
     sys.exit(1)
